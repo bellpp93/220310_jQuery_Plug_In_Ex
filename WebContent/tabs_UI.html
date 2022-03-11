@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>tabs jQuery UI 실습 예제</title>
+<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
+
+<!-- jQuery 인클루드 -->
+<script src="js/jquery.js"></script>
+
+<!-- jQuery UI 인클루드 -->
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#example").tabs();
+	});
+</script>
+</head>
+<body>
+	<div id="example">
+		<ul>
+			<li><a href="#tab-1">추천도서</a></li>
+			<li><a href="#tab-2">베스트 셀러</a></li>
+			<li><a href="#tab-3">신간도서</a></li>
+		</ul>
+		<div id="tab-1">
+			<img src="images/세븐테크.jpg" width="170" height="200">
+		</div>
+		
+		<div id="tab-2">
+			<img src="images/백년의기억.jpg" width="170" height="200">
+			<img src="images/나에게고맙다.jpg" width="170" height="200">
+		</div>
+		
+		<div id="tab-3">
+			<img src="images/꽃을삼킨여자.jpg" width="170" height="200">
+		</div>
+	</div>
+</body>
+</html>
